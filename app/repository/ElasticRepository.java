@@ -37,6 +37,8 @@ public class ElasticRepository {
         //         });
     }
 
+    
+
     public CompletionStage<List<SearchedHero>> suggest(String input) {
         return CompletableFuture.completedFuture(Arrays.asList(SearchedHeroSamples.IronMan(), SearchedHeroSamples.MsMarvel(), SearchedHeroSamples.SpiderMan()));
         // TODO
